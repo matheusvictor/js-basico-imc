@@ -17,14 +17,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 <body>
     <h1 class="main-title">IMC</h1>
     
-    <div class="container__form">
-        <form id="imc-form" class="form">
+    <div class="container__main">
+        <form id="imc-form" class="container__form">
 
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome"><br><br>
@@ -35,26 +35,52 @@
             <label for="peso">Peso:</label>
             <input type="number" step="0.01" id="peso" name="peso" required><br><br>
             
-            <input type="submit" class="form_button" value="Enviar">
+            <input type="submit" class="form_button" value="Calcular">
         </form>
+
+        <div class="container__table">
+            <label for="tabela" class="table_title">Tabela de resultados:</label>
+            <table id="tabela">
+              <tr class="table-column">
+                <th class="table-head">Classificação</th>
+                <th class="table-head">IMG (kg/m²)</th>
+                <th class="table-head">Risco de comorbidades</th>
+              </tr>
+              <tr class="table-column">
+                <td class="table-row">Baixo do peso</td>
+                <td class="table-row"> < 18.5 </td>
+                <td class="table-row">Baixo </td>
+              </tr>
+              <tr class="table-column">
+                <td class="table-row">Peso normal</td>
+                <td class="table-row"> 18.5 - 24.9</td>
+                <td class="table-row">Médio</td>
+              </tr>
+              <tr class="table-column">
+                <td class="table-row">Pré-obeso</td>
+                <td class="table-row"> 25.0 - 29.9</td>
+                <td class="table-row">Aumentado </td>
+              </tr>
+              <tr class="table-column">
+                <td class="table-row">Obeso I</td>
+                <td class="table-row"> 30.0 - 34.9 </td>
+                <td class="table-row">Moderado </td>
+              </tr>
+              <tr class="table-column">
+                <td class="table-row">Obeso II</td>
+                <td class="table-row"> 35.0 - 39.9 </td>
+                <td class="table-row">Grave</td>
+              </tr>
+              <tr class="table-column">
+                <td class="table-row">Obeso III</td>
+                <td class="table-row"> >= 40.0 </td>
+                <td class="table-row">Muito grave</td>
+              </tr>
+            </table>
+        </div>
+
     </div>
 
-    <div class="container__table">
-        <label for="tabela" class="table_title">Tabela de resultados:</label>
-        <table id="tabela">
-          <tr class="table-column">
-            <th class="table-head">Coluna 1</th>
-            <th class="table-head">Coluna 1</th>
-            <th class="table-head">Coluna 1</th>
-          </tr>
-          <tr class="table-column">
-            <td class="table-row">Linha 1</td>
-            <td class="table-row">Linha 1</td>
-            <td class="table-row">Linha 1</td>
-          </tr>
-        </table>
-    </div>
-
-    <script src="assets/main.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
