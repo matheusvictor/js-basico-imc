@@ -35,6 +35,10 @@ body {
     padding: 20px;
 }
 
+.container__form > textarea {
+    margin-top: 2rem;
+}
+
 .form_button {
     color: white;
     border: none;
